@@ -1,0 +1,42 @@
+# macOS / editor
+.DS_Store
+.vscode/
+
+# Python cache/env
+__pycache__/
+*.py[cod]
+.venv/
+
+# Notebook cache
+**/.ipynb_checkpoints/
+
+# Raw data (keep only placeholders + checksum reference)
+data/original/*
+!data/original/.gitkeep
+!data/original/checksums_expected.sha256
+
+# Processed data (always generated)
+data/processed/*
+!data/processed/.gitkeep
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+outputs/tables/*
+!outputs/tables/.gitkeep
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+outputs/metrics/*
+!outputs/metrics/.gitkeep
+
+# Generated report assets (PDF is versioned separately)
+reports/figures/*
+!reports/figures/.gitkeep
+reports/maps/*
+!reports/maps/.gitkeep
+
+# Local validation artifacts
+TEST_REPORT.md
+TEST_REPO*
